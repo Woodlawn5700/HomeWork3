@@ -71,8 +71,5 @@ public class Main {
                 break;
 
         }
-        Algorithms algo = new Algorithms();
-        int x = algo.compare("Pashe", "Pashen");
-        System.out.println(x);
     }
 }
