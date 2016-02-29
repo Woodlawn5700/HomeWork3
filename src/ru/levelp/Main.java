@@ -30,7 +30,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        Student[] students = new Student[3];
+        Student[] students = new Student[100];
 
         while (true) {
 
@@ -69,7 +69,9 @@ public class Main {
 
             if (unswer == 3)
                 break;
-
         }
+        Algorithms argo = new Algorithms();
+        int x= argo.compare("b", "baa");
+        System.out.println(x);
     }
 }

@@ -20,33 +20,38 @@ public class Algorithms {
                 for (int i = 0; i < arrayA.length; i++) {
                     if (arrayA[i] < arrayB[i]) {
                         x = -1;
+                        break;
 
                     } else if (arrayA[i] > arrayB[i]) {
                         x = 1;
+                        break;
                     }
                     if (arrayA[arrayA.length - 1] == arrayB[arrayA.length - 1]) {
                         if (arrayA.length > arrayB.length) {
                             x = 1;
+                            break;
                         } else {
                             x = -1;
+                            break;
                         }
                     }
                 }
-            } else {
+            }
+
+            else {
                 for (int i = 0; i < arrayB.length; i++) {
 
                     if (arrayA[i] < arrayB[i]) {
                         x = -1;
-                    } else if (arrayA[i] > arrayB[i]) {
+                        break;
+                    }
+                    else if (arrayA[i] > arrayB[i]) {
                         x = 1;
+                        break;
                     }
-                    if (arrayA[arrayA.length - 1] == arrayB[arrayA.length - 1]) {
-                        if (arrayA.length > arrayB.length) {
-                            x = -1;
-                        } else {
-                            x = 1;
-                        }
-                    }
+                    else
+                        x = 1;
+
                 }
             }
         }
